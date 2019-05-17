@@ -83,7 +83,7 @@ void SortAlgorithms::quickSort(double arr[], int low, int high)
 
 
 
-int Sort::partition (double arr[], int low, int high)
+int SortAlgorithms::partition (double arr[], int low, int high)
 {
     double pivot = arr[high];
     int i = (low - 1);
@@ -101,7 +101,7 @@ int Sort::partition (double arr[], int low, int high)
 }
 
 //insertion
-void Sort::insertSort(double arr[]){
+void SortAlgorithms::insertSort(double arr[]){
   for (int j = 1; j < length; ++j){
     double temp = arr[length];
     int k = j;
@@ -148,7 +148,7 @@ void SortAlgorithms::selectionSort(double arr[], int n){
 }
 
 //Use all sorting
-void Sort::mainSort(string file)
+void SortAlgorithms::mainSort(string file)
 {
   ifstream myFile;
   double data;
